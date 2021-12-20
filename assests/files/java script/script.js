@@ -5,7 +5,7 @@ var navbar = document.querySelector(".navbar");
 window.onscroll = () => {
     this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
-/*===== Nav Toggler =====*/
+/* Nav Toggler */
 const navMenu = document.querySelector(".menu");
 navToggle = document.querySelector(".menu-btn");
 if (navToggle) {
@@ -20,7 +20,7 @@ function linkAction() {
     navMenu.classList.remove("active")
 }
 navLink.forEach(n => n.addEventListener("click", linkAction))
-/*===== Scroll Section Active Link =====*/
+/* Scroll Section Active Link */
 const Section = document.querySelectorAll('section[id]')
 function scrollActive() {
     debugger;
